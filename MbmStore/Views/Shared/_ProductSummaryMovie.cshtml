@@ -1,0 +1,30 @@
+﻿@model MbmStore.Models.Movie
+@using MbmStore.Infraestructure
+<tr>
+    <td valign="top">
+        <img src="/Images/@Model.ImageUrl" alt="@Model.Title"
+             style="width:100px" />
+    </td>
+    <td valign="top" style="width:250px">
+        <div>
+            <strong>Title:</strong> @Model.Title<br />
+            <strong>Director:</strong> @Model.Director<br />
+            <strong>Price:</strong> @Model.Price<br />
+        </div>
+    </td>
+
+    <div class="col-md-6">
+        <form id="@Model.ProductId" asp-action="AddToCart"
+              asp-controller="Cart" method="post">
+            <input type="hidden" name="ProductID" value="@Model.ProductId" />
+            <input type="hidden" name="returnUrl"
+                   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+            <span class="card-text p-1">
+                <button type="submit"
+                        class="btn btn-success btn-sm pull-right" style="float:right">
+                    Add To Cart
+                </button>
+            </span>
+        </form>
+    </div>
+</tr>

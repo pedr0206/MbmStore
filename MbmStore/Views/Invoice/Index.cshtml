@@ -1,0 +1,56 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@using MbmStore.Models
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Home" asp-action="Index">Home</a>
+<h2>Invoices</h2>
+
+<form method="post" asp-controller="Invoice" asp-action="index">
+    <div>
+        <select name="customer" id="customer"
+                asp-items="@ViewData["Customers"] as List<SelectListItem>"></select>
+        <button type="submit">Show invoices</button>
+    </div>
+</form>
+
+@foreach (var invoice in ViewBag.Invoices)
+{
+    decimal total = 0M;
+    <table style="width:50%">
+        <tr>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>@invoice.Customer.FirstName</td>
+            <td>
+                @foreach (OrderItem item in invoice.OrderItem)
+                {
+
+                    @item.Product.Title
+                    <strong>(@item.Product.ToString().Substring(16))</strong><br>
+
+                    //syntatic sugar expression in oder words:
+                    //total = total + item.Product.Price;
+                    total += item.Product.Price;
+                }
+                <strong>Total: @total </strong>
+            </td>
+
+
+            <td>
+                @foreach (OrderItem item in invoice.OrderItem)
+                {
+                    @item.Product.Price;
+
+                    <br />
+                }
+            </td>
+        </tr>
+    </table>
+}
+
+

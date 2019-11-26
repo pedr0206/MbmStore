@@ -1,0 +1,47 @@
+﻿@model MbmStore.Models.MusicCd
+@using MbmStore.Infraestructure
+<tr>
+    <td valign="top">
+        <img src="/Images/@Model.ImageUrl" alt="@Model.Title"
+             style="width:100px" />
+    </td>
+    <td valign="top" style="width:250px">
+        <div>
+            <strong>Artist:</strong> @Model.Artist<br />
+            <strong>Title:</strong> @Model.Title<br />
+            <strong>Released:</strong> @Model.Released<br />
+            <strong>Price:</strong> @Model.Price<br />
+        </div>
+        <p><strong>Tracks:</strong></p>
+        <ol>
+
+
+            @foreach (MbmStore.Models.Track track in Model.Tracks)
+            {
+                <li>
+                    @track.Title (@track.Composer)
+                    @track.Length.Minutes:@track.Length.Seconds
+                </li>
+            }
+
+        </ol>
+        <strong>Total play time: @Model.GetPlayTime() </strong>
+    </td>
+
+
+    <td style="vertical-align:bottom;padding-left:50px;">
+        <div>
+            <form id="@Model.ProductId" asp-action="AddToCart" asp-controller="Cart"
+                  method="post">
+                <input type="hidden" name="ProductID" value="@Model.ProductId" />
+                <input type="hidden" name="returnUrl"
+                       value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                <span class="card-text p-1">
+                    <button type="submit"
+                            class="btn btn-success btn-sm pull-right" style="float:right">
+                        Add To Cart
+                    </button>
+                </span>
+            </form>
+        </div>
+</tr>

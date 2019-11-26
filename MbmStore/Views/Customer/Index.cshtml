@@ -1,0 +1,34 @@
+﻿
+@using MbmStore.Models;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+
+@*<p><b>Fisrt Name: </b>@ViewBag.Customer1.FirstName</p>
+    <li><b>Last Name: </b>@ViewBag.Customer1.LastName</li>
+    <li><b>Address: </b>@ViewBag.Customer1.Address</li>
+    <li><b>Zip code: </b>@ViewBag.Customer1.Zip</li>
+    <li><b>City: </b>@ViewBag.Customer1.City</li>
+
+    <p><b>Fisrt Name: </b>@ViewBag.Customer2.FirstName</p>
+    <li><b>Last Name: @ViewBag.Customer2.LastName</b></li>
+    <li><b>Address: </b>@ViewBag.Customer2.Address</li>
+    <li><b>Zip code: </b>@ViewBag.Customer2.Zip</li>
+    <li><b>City: </b>@ViewBag.Customer2.City</li>*@
+@foreach (Customer customer in ViewBag.ListOfCustomers)
+{
+    <div>
+        <p>
+            <b> Name: </b>@customer.FirstName @customer.LastName
+            <b> is </b>@customer.Age <b> years old </b>
+            <li><b>Phone Numbers: </b>@string.Join(", ", customer.PhoneNumbers)</li>
+            <li><b>Address: </b>@customer.Address</li>
+            <li><b>Zip code: </b>@customer.Zip</li>
+            <li><b>City: </b>@customer.City</li>
+
+
+    </div>
+}
