@@ -95,8 +95,7 @@ namespace MbmStore.Data
                              Title = "Gladiator",
                              Price = 49.95M,
                              ImageUrl = "gladiator.jpg",
-                             Director
-                        = "Ridley Scott",
+                             Director = "Ridley Scott",
                              Category = "Movie"
                          },
                          new Movie
@@ -115,8 +114,7 @@ namespace MbmStore.Data
                              TrackId = 1,
                              Title = "Come Together",
                              Length = new TimeSpan(0, 4, 20),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -124,8 +122,7 @@ namespace MbmStore.Data
                              TrackId = 2,
                              Title = "Something",
                              Length = new TimeSpan(0, 3, 03),
-                             Composer =
-                        "Harrison",
+                             Composer = "Harrison",
                              ProductId = 3
                          },
                          new Track
@@ -141,8 +138,7 @@ namespace MbmStore.Data
                              TrackId = 4,
                              Title = "Oh! Darling",
                              Length = new TimeSpan(0, 3, 26),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -150,8 +146,7 @@ namespace MbmStore.Data
                              TrackId = 5,
                              Title = "Octopus's Garden",
                              Length = new TimeSpan(0, 2, 51),
-                             Composer
-                        = "Starkey",
+                             Composer = "Starkey",
                              ProductId = 3
                          },
                          new Track
@@ -175,16 +170,14 @@ namespace MbmStore.Data
                              TrackId = 8,
                              Title = "Because",
                              Length = new TimeSpan(0, 2, 45),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
                          {
                              TrackId = 9,
                              Title = "You Never Give Me Your Money",
-                             Length = new TimeSpan(0, 4,
-                        02),
+                             Length = new TimeSpan(0, 4, 02),
                              Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
@@ -193,8 +186,7 @@ namespace MbmStore.Data
                              TrackId = 10,
                              Title = "Sun King",
                              Length = new TimeSpan(0, 2, 26),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -202,8 +194,7 @@ namespace MbmStore.Data
                              TrackId = 11,
                              Title = "Mean Mr. Mustard",
                              Length = new TimeSpan(0, 1, 6),
-                             Composer
-                        = "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -211,16 +202,14 @@ namespace MbmStore.Data
                              TrackId = 12,
                              Title = "Polythene Pam",
                              Length = new TimeSpan(0, 1, 12),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
                          {
                              TrackId = 13,
                              Title = "She Came In Through The Bathroom Window",
-                             Length = new
-                        TimeSpan(0, 1, 57),
+                             Length = new TimeSpan(0, 1, 57),
                              Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
@@ -229,8 +218,7 @@ namespace MbmStore.Data
                              TrackId = 14,
                              Title = "Golden Slumbers",
                              Length = new TimeSpan(0, 1, 31),
-                             Composer
-                        = "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -246,8 +234,7 @@ namespace MbmStore.Data
                              TrackId = 16,
                              Title = "The End",
                              Length = new TimeSpan(0, 2, 19),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -255,8 +242,7 @@ namespace MbmStore.Data
                              TrackId = 17,
                              Title = "Her Majesty",
                              Length = new TimeSpan(0, 0, 23),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 3
                          },
                          new Track
@@ -264,8 +250,7 @@ namespace MbmStore.Data
                              TrackId = 18,
                              Title = "Taxman",
                              Length = new TimeSpan(0, 2, 28),
-                             Composer =
-                        "Harrison",
+                             Composer = "Harrison",
                              ProductId = 4
                          },
                          new Track
@@ -273,8 +258,7 @@ namespace MbmStore.Data
                              TrackId = 19,
                              Title = "Eleanor Rigby",
                              Length = new TimeSpan(0, 2, 6),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 4
                          },
                          new Track
@@ -282,8 +266,7 @@ namespace MbmStore.Data
                              TrackId = 20,
                              Title = "I'm Only Sleeping",
                              Length = new TimeSpan(0, 3, 0),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 4
                          },
                          new Track
@@ -291,8 +274,7 @@ namespace MbmStore.Data
                              TrackId = 21,
                              Title = "Love You To",
                              Length = new TimeSpan(0, 2, 59),
-                             Composer =
-                        "Harrison",
+                             Composer = "Harrison",
                              ProductId = 4
                          },
                          new Track
@@ -316,8 +298,7 @@ namespace MbmStore.Data
                              TrackId = 24,
                              Title = "She Said She Said",
                              Length = new TimeSpan(0, 2, 36),
-                             Composer
-                        = "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 4
                          },
                          new Track
@@ -341,8 +322,7 @@ namespace MbmStore.Data
                              TrackId = 27,
                              Title = "For No One",
                              Length = new TimeSpan(0, 1, 59),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 4
                          },
                          new Track
@@ -350,8 +330,7 @@ namespace MbmStore.Data
                              TrackId = 28,
                              Title = "Doctor Robert",
                              Length = new TimeSpan(0, 1, 14),
-                             Composer =
-                        "Lennon, McCartney",
+                             Composer = "Lennon, McCartney",
                              ProductId = 4
                          },
                          new Track
