@@ -364,8 +364,7 @@ namespace MbmStore.Data
                         CustomerId = 1,
                         FirstName = "Tina",
                         LastName = "Petterson",
-                        Address =
-                   "Irisdahlsvej 32",
+                        Address = "Irisdahlsvej 32",
                         Zip = "8200",
                         City = "Århus N"
                     },
@@ -374,8 +373,7 @@ namespace MbmStore.Data
                         CustomerId = 2,
                         FirstName = "Thomas",
                         LastName = "Larsson",
-                        Address =
-                   "Solsikkevej 32",
+                        Address = "Solsikkevej 32",
                         Zip = "8000",
                         City = "Århus C"
                     }
